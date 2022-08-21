@@ -1,0 +1,23 @@
+@import "./base/reset";
+@import "./utils/variables";
+@import "./utils/common";
+@import "./utils/mixins";
+@import "./components/headeer";
+@import "./components/logo";
+@import "./components/hero";
+@import "./components/button";
+@import "./components/qualities";
+@import "./components/occupation";
+@import "./components/team";
+@import "./components/social";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/modal";
+@import "./components/filter";
+@import "./components/portfolio";
+
+/* общие классы*/
+body {
+    font-family: 'Roboto', sans-serif;
+    color: $sonic-silver;
+}

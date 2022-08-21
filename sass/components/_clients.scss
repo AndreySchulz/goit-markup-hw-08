@@ -1,0 +1,42 @@
+/*  наши клиенты */
+
+.clients__heading {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+
+    color: $black-brown;
+}
+
+.clients-box {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.clients-box__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    color: $darkgray;
+
+    border: 1px solid $darkgray;
+    border-radius: 4px;
+
+    @include transition();
+
+    &:hover,
+    &:focus{
+        border-color: $accent;
+        color: $accent;
+    }
+}
+
+.clients-box__svg {
+    fill: currentColor;
+}
