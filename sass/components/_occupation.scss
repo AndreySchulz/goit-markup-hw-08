@@ -1,5 +1,11 @@
 /* Чем мы занимаемся */
+.occupation{
+    display: none;
 
+    @media screen and (min-width:$desktop){
+       display: block; 
+    }
+}
 .occupation__heading {
     color: $black-brown;
     margin-bottom: 50px;
