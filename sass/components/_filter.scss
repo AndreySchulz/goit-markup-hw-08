@@ -1,15 +1,27 @@
 .filter {
     display: flex;
-    justify-content: center;
+    
     margin-bottom: 50px;
+
+    flex-wrap: wrap;
+    @media screen and (min-width:$tablet){
+        justify-content: center;
+    }
 }
 
 .filter__item {
-    margin-right: 6px;
+    margin-right: 8px;
 
     &:last-child {
             margin-right: 0px;
         }
+
+    margin-bottom: 15px;
+
+    @media screen and (min-width:$tablet){
+        margin-bottom: 0px;
+        
+    }
 }
 
 .filter__buttun {
@@ -26,6 +38,8 @@
     letter-spacing: 0.03em;
     font-family: inherit;
     cursor: pointer;
+    
+
 
     @include transition();
 

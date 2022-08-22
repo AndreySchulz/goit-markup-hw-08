@@ -14,7 +14,7 @@
     align-items: center;
 }
 
-.burger-btn {
+.menu-toggle {
     position: relative;
 
     width: 40px;
@@ -52,7 +52,7 @@
         }
 }
 
-.header-links.active {
+.header-links.is-open {
     transform: translateX(0);
 }
 

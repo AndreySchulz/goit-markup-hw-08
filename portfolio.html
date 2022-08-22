@@ -20,36 +20,55 @@
 <body>
   <header class="header">
     <div class="header__box container ">
-      <nav class="navi">
-        <a href="./index.html" class="logo logo--header">
-          <span class="logo__accent">Web</span>Studio</a>
-        <ul class="navi__list">
-          <li class="navi__item">
-            <a href="./index.html" class="navi__link">Студия</a>
-          </li>
-          <li class="navi__item">
-            <a href="./portfolio.html" class="navi__link navi__link--on-page">Портфолио</a>
-          </li>
-          <li class="navi__item">
-            <a href="" class="navi__link">Контакты</a>
-          </li>
-      </nav>
-      <ul class="contact">
-        <li class="contact__item">
-          <a href="mailto:info@devstudio.com" class="contact__link">
-            <svg class="contact__icon" width="16" height="12">
-              <use href="images/sprite.svg#icon-envelope"></use>
-            </svg>
-            info@devstudio.com</a>
-        </li>
-        <li class="header-contact__item">
-          <a href="tel:+380961111111" class="contact__link">
-            <svg class="contact__icon" width="10" height="16">
-              <use href="images/sprite.svg#icon-smartphone"></use>
-            </svg>
-            +38 096 111 11 11</a>
-        </li>
-      </ul>
+      <a href="./index.html" class="logo logo--header">
+        <span class="logo__accent">Web</span>Studio</a>
+      <div class="header-links">
+        <nav class="navi">
+          <ul class="navi__list">
+            <li class="navi__item">
+              <a href="./index.html" class="navi__link">Студия</a>
+            </li>
+            <li class="navi__item">
+              <a href="./portfolio.html" class="navi__link navi__link--on-page">Портфолио</a>
+            </li>
+            <li class="navi__item">
+              <a href="" class="navi__link">Контакты</a>
+            </li>
+        </nav>
+        <div class="contact-header">
+          <ul class="contact">
+            <li class="contact__item">
+              <a href="mailto:info@devstudio.com" class="contact__link">
+                <svg class="contact__icon" width="16" height="12">
+                  <use href="images/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a>
+            </li>
+            <li class="contact__item">
+              <a href="tel:+380961111111" class="contact__link contact__link--big">
+                <svg class="contact__icon" width="10" height="16">
+                  <use href="images/sprite.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a>
+            </li>
+          </ul>
+          <ul class="social-header">
+            <li class="social-header__item">
+              <a href="" class="social-header__link">Instagram</a>
+            </li>
+            <li class="social-header__item">
+              <a href="" class="social-header__link">Twitter</a>
+            </li>
+            <li class="social-header__item">
+              <a href="" class="social-header__link">Facebook</a>
+            </li>
+            <li class="social-header__item">
+              <a href="" class="social-header__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button class="burger-btn" type="button"></button>
     </div>
   </header>
   <main>
@@ -68,8 +87,7 @@
         <ul class="work">
           <li class="work__item">
             <div class="work__overlay">
-              <img class="work__img" src="./images/technohryak.jpg" alt="Скриншот экрана с готовым сайтом"
-                width="370" />
+              <img class="work__img" src="./images/technohryak.jpg" alt="Скриншот экрана с готовым сайтом" />
               <div class="work__text-holder">
                 <p class="work__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит
@@ -84,8 +102,7 @@
           </li>
           <li class="work__item">
             <div class="work__overlay">
-              <img class="work__img" src="./images/poster-new-orlean.jpg" alt="Постер к матчу нового орлеана"
-                width="370" />
+              <img class="work__img" src="./images/poster-new-orlean.jpg" alt="Постер к матчу нового орлеана" />
               <div class="work__text-holder">
                 <p class="work__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит
@@ -100,7 +117,7 @@
           </li>
           <li class="work__item">
             <div class="work__overlay">
-              <img class="work__img" src="./images/seafood.jpg" alt="Логотип приложения сиафуд" width="370" />
+              <img class="work__img" src="./images/seafood.jpg" alt="Логотип приложения сиафуд" />
               <div class="work__text-holder">
                 <p class="work__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит
@@ -115,7 +132,7 @@
           </li>
           <li class="work__item">
             <div class="work__overlay">
-              <img class="work__img" src="./images/project-prime.jpg" alt="Постер проэкта Прайм" width="370" />
+              <img class="work__img" src="./images/project-prime.jpg" alt="Постер проэкта Прайм" />
               <div class="work__text-holder">
                 <p class="work__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит
@@ -130,7 +147,7 @@
           </li>
           <li class="work__item">
             <div class="work__overlay">
-              <img class="work__img" src="./images/project-boxes.jpg" alt="Постер проэкта Боксес" width="370" />
+              <img class="work__img" src="./images/project-boxes.jpg" alt="Постер проэкта Боксес" />
               <div class="work__text-holder">
                 <p class="work__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит
@@ -145,7 +162,7 @@
           </li>
           <li class="work__item">
             <div class="work__overlay">
-              <img class="work__img" src="./images/inspiration.jpg" alt="Скриншот какого то вэб сайта" width="370" />
+              <img class="work__img" src="./images/inspiration.jpg" alt="Скриншот какого то вэб сайта" />
               <div class="work__text-holder">
                 <p class="work__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит
@@ -160,7 +177,7 @@
           </li>
           <li class="work__item">
             <div class="work__overlay">
-              <img class="work__img" src="./images/edition-limited.jpg" alt="Страница из журнала" width="370" />
+              <img class="work__img" src="./images/edition-limited.jpg" alt="Страница из журнала" />
               <div class="work__text-holder">
                 <p class="work__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит
@@ -175,7 +192,7 @@
           </li>
           <li class="work__item">
             <div class="work__overlay">
-              <img class="work__img" src="./images/project-lab.jpg" alt="Бирка с надписью проэкта" width="370" />
+              <img class="work__img" src="./images/project-lab.jpg" alt="Бирка с надписью проэкта" />
               <div class="work__text-holder">
                 <p class="work__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит
@@ -190,7 +207,7 @@
           </li>
           <li class="work__item">
             <div class="work__overlay">
-              <img class="work__img" src="./images/growing.jpg" alt="Человек работает с приложением" width="370" />
+              <img class="work__img" src="./images/growing.jpg" alt="Человек работает с приложением" />
               <div class="work__text-holder">
                 <p class="work__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит
