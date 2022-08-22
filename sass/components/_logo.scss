@@ -14,7 +14,13 @@
 }
 
 .logo--header {
-    margin-right: 93px;
+    @media screen and (min-width: $desktop){
+        margin-right: 93px;
+    }
+    
+    @media screen and (min-width: $tablet){
+        margin-right: 88px;
+    }
 }
 .logo--footer {
     display: inline-block;

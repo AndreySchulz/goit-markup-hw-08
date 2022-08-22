@@ -20,4 +20,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: $sonic-silver;
+    
+}
+body.overflow{
+    overflow: hidden;
 }

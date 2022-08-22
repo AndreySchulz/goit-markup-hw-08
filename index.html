@@ -19,36 +19,55 @@
 <body>
     <header class="header">
         <div class="header__box container ">
-            <nav class="navi">
-                <a href="./index.html" class="logo logo--header">
-                    <span class="logo__accent">Web</span>Studio</a>
-                <ul class="navi__list">
-                    <li class="navi__item">
-                        <a href="./index.html" class="navi__link navi__link--on-page">Студия</a>
-                    </li>
-                    <li class="navi__item">
-                        <a href="./portfolio.html" class="navi__link">Портфолио</a>
-                    </li>
-                    <li class="navi__item">
-                        <a href="" class="navi__link">Контакты</a>
-                    </li>
-            </nav>
-            <ul class="contact">
-                <li class="contact__item">
-                    <a href="mailto:info@devstudio.com" class="contact__link">
-                        <svg class="contact__icon" width="16" height="12">
-                            <use href="images/sprite.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com</a>
-                </li>
-                <li class="header-contact__item">
-                    <a href="tel:+380961111111" class="contact__link">
-                        <svg class="contact__icon" width="10" height="16">
-                            <use href="images/sprite.svg#icon-smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11</a>
-                </li>
-            </ul>
+            <a href="./index.html" class="logo logo--header">
+                <span class="logo__accent">Web</span>Studio</a>
+            <div class="header-links">
+                <nav class="navi">
+                    <ul class="navi__list">
+                        <li class="navi__item">
+                            <a href="./index.html" class="navi__link navi__link--on-page">Студия</a>
+                        </li>
+                        <li class="navi__item">
+                            <a href="./portfolio.html" class="navi__link">Портфолио</a>
+                        </li>
+                        <li class="navi__item">
+                            <a href="" class="navi__link">Контакты</a>
+                        </li>
+                </nav>
+                <div class="contact-header">
+                    <ul class="contact">
+                        <li class="contact__item">
+                            <a href="mailto:info@devstudio.com" class="contact__link">
+                                <svg class="contact__icon" width="16" height="12">
+                                    <use href="images/sprite.svg#icon-envelope"></use>
+                                </svg>
+                                info@devstudio.com</a>
+                        </li>
+                        <li class="contact__item">
+                            <a href="tel:+380961111111" class="contact__link contact__link--big">
+                                <svg class="contact__icon" width="10" height="16">
+                                    <use href="images/sprite.svg#icon-smartphone"></use>
+                                </svg>
+                                +38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                    <ul class="social-header">
+                        <li class="social-header__item">
+                            <a href="" class="social-header__link">Instagram</a>
+                        </li>
+                        <li class="social-header__item">
+                            <a href="" class="social-header__link">Twitter</a>
+                        </li>
+                        <li class="social-header__item">
+                            <a href="" class="social-header__link">Facebook</a>
+                        </li>
+                        <li class="social-header__item">
+                            <a href="" class="social-header__link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="burger-btn" type="button"></button>
         </div>
     </header>
     <main>
@@ -456,6 +475,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
