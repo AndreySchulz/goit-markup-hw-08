@@ -27,9 +27,9 @@
             flex-wrap: wrap;
             margin: -15px;
     }
-     @media screen and (min-width:$desktop){
-        flex-wrap: nowrap;
-     }
+    //  @media screen and (min-width:$desktop){
+    //     flex-wrap: nowrap;
+    //  }
 }
 
 .team-box__card {
@@ -51,9 +51,9 @@
             width: calc((100% - 4 * 15px) / 2);
             margin: 15px;
         }
-        // @media screen and (min-width:$desktop){
-        //     width: calc((100% - 4 * 15px) / 4)
-        // }
+        @media screen and (min-width:$desktop){
+            width: calc((100% - 8 * 15px) / 4)
+        }
 
 }
 .team-box__photo{
