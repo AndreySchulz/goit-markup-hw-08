@@ -6,6 +6,7 @@
 
     width: 100%;
     height: 100%;
+    
     background-color: rgba(0, 0, 0, 0.2);
     @include transition();
 }
@@ -18,11 +19,25 @@
 
 .modal {
     position: absolute;
-    top: 50%;
-    left: 50%;
-
     padding: 40px;
-    transform: translate(-50%, -50%);
+    top: 93px;
+    left: 15px;
+    
+    @media screen and (max-width:$tablet ){
+        bottom: 93px;
+        right: 15px;
+    }
+    @media screen and (min-width:$tablet ){
+        width: 450px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+     @media screen and (min-width:$desktop ){
+        width: 528px;
+     }
+
+    
 
     background-color: white;
 }
@@ -133,11 +148,17 @@
 .form-confirm__name {
     display: flex;
     align-items: center;
-    font-size: 14px;
-    line-height: 1.71;
+    
     letter-spacing: 0.03em;
     color: $sonic-silver;
     margin-bottom: 30px;
+    font-size: 12px;
+    line-height: 1.17;
+
+    @media screen and (min-width:$desktop){
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .confirm-name__svg {

@@ -834,11 +834,29 @@ a {
 
 .modal {
   position: absolute;
-  top: 50%;
-  left: 50%;
   padding: 40px;
-  transform: translate(-50%, -50%);
+  top: 93px;
+  left: 15px;
   background-color: white;
+}
+@media screen and (max-width: 767.99px) {
+  .modal {
+    bottom: 93px;
+    right: 15px;
+  }
+}
+@media screen and (min-width: 767.99px) {
+  .modal {
+    width: 450px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media screen and (min-width: 1199.99px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal__heading {
@@ -950,11 +968,17 @@ a {
 .form-confirm__name {
   display: flex;
   align-items: center;
-  font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
   margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 1.17;
+}
+@media screen and (min-width: 1199.99px) {
+  .form-confirm__name {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .confirm-name__svg {
