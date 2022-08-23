@@ -17,14 +17,22 @@
         justify-content: space-around;
         align-items: baseline;
     }
+
+    @media screen and (min-width:$desktop){
+        justify-content: space-between;
+        
+    }
 }
 
 .footer-contact {
-    // margin-right: 70px;
+    
     font-weight: 400;
     margin-bottom: 60px;
     @media screen and (min-width:$tablet){
         margin-bottom: 0px;
+    }
+    @media screen and (min-width:$desktop){
+            margin-right: 70px;
     }
 }
 
@@ -69,8 +77,12 @@
 
 /* subscrible */
 .subscribe {
-    // margin-left: auto;
+    
     margin-top: 60px;
+    @media screen and (min-width:$desktop){
+        margin-top: 0;
+        margin-left: auto;
+    }
 }
 
 .subscribe__heading {

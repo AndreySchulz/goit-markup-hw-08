@@ -1,13 +1,18 @@
 .filter {
     display: flex;
     
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 
     flex-wrap: wrap;
     @media screen and (min-width:$tablet){
         justify-content: center;
+        margin-bottom: 30px;
     }
-}
+    @media screen and (min-width:$desktop) {
+        margin-bottom: 50px;
+    }
+        
+}   
 
 .filter__item {
     margin-right: 8px;

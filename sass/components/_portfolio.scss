@@ -11,7 +11,9 @@
 .work__item {
     // width: calc((100% - 2 * 30px) / 3);
     // margin-right: 30px;
-    // margin-bottom: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
 
     @include transition();
 
@@ -61,7 +63,7 @@
     background-color: $accent;
     opacity: 0.9;
     padding: 63px 24px;
-
+    
     transform: translateY(0);
     @include transition();
 }
@@ -78,13 +80,14 @@
     padding: 20px 24px;
     border: 1px solid #eeeeee;
     border-top: none;
+    flex-grow: 1;
 }
 
 .work__heading {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-
+    letter-spacing: 0.06em;
     color: $black-brown;
 }
 

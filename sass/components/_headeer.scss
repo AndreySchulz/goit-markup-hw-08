@@ -16,22 +16,45 @@
 
 .menu-toggle {
     position: relative;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 
     width: 40px;
     height: 40px;
     margin-left: auto;
+
+    border: none;
+    background-color: transparent;
+
+    &:hover,
+    &:focus{
+        fill:$accent;
+    }
+
 
 
     @media screen and (min-width: $tablet) {
         display: none;
     }
 }
-
+.menu-toggle__close{
+    display: none;
+}
 .header-links {
     display: flex;
     width: 100%;
     
     justify-content: space-between;
+
+    &.is-open ~ .menu-toggle .menu-toggle__close{
+        display: block;
+    }
+        &.is-open~.menu-toggle .menu-toggle__open{
+            display: none;
+        }
 
     @media screen and (max-width: $tablet) {
         position: absolute;
