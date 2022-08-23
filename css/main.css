@@ -65,6 +65,11 @@ a {
   overflow: hidden;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 /* начало */
 .header {
   border-bottom: 1px solid #e5e5e5;
@@ -92,6 +97,9 @@ a {
   margin-left: auto;
   border: none;
   background-color: transparent;
+}
+.menu-toggle:focus {
+  fill: #2196f3;
 }
 @media screen and (min-width: 767.99px) {
   .menu-toggle {
@@ -373,7 +381,7 @@ a {
 /* hero */
 .hero {
   background-color: #2f303a;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -381,10 +389,31 @@ a {
   text-align: center;
   padding: 118px 0;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mob@2x.jpg);
+  }
+}
+@media screen and (min-width: 767.99px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tab.jpg);
+  }
+}
+@media screen and (min-width: 767.99px) and (min-device-pixel-ratio: 2), screen and (min-width: 767.99px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 767.99px) and (min-resolution: 192dpi), screen and (min-width: 767.99px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tab@2x.jpg);
+  }
+}
 @media screen and (min-width: 1199.99px) {
   .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
     background-size: 1600px;
     padding: 200px 0;
+  }
+}
+@media screen and (min-width: 1199.99px) and (min-device-pixel-ratio: 2), screen and (min-width: 1199.99px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1199.99px) and (min-resolution: 192dpi), screen and (min-width: 1199.99px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero@2x.jpg);
   }
 }
 
@@ -590,10 +619,6 @@ a {
   .team-box__card {
     width: calc((100% - 120px) / 4);
   }
-}
-
-.team-box__photo {
-  width: 100%;
 }
 
 .team-box__description {
@@ -1142,7 +1167,6 @@ a {
 
 .work__img {
   display: block;
-  width: 100%;
 }
 
 .work__text-holder {

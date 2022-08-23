@@ -138,15 +138,27 @@
                 <h2 class="occupation__heading">Чем мы занимаемся</h2>
                 <ul class="ocupation-box">
                     <li class="ocupation-box__item">
-                        <img class="ocupation-box__img" src="./images/img1.jpg" alt="кодинг ночью" width="370" />
+                        <picture>
+                            <source srcset="./images/desktop/img1.jpg 1x, ./images/desktop/img1@2x.jpg 2x">
+                            <img class="ocupation-box__img" src="./images/desktop/img1.jpg" alt="кодинг ночью"
+                                width="370">
+                        </picture>
                         <p class="ocupation-box__description">Десктопные приложения</p>
                     </li>
                     <li class="ocupation-box__item">
-                        <img class="ocupation-box__img" src="./images/img2.jpg" alt="рука с телефоном" width="370" />
+                        <picture>
+                            <source srcset="./images/desktop/img2.jpg 1x, ./images/desktop/img2@2x.jpg 2x">
+                            <img class="ocupation-box__img" src="./images/desktop/img2.jpg" alt="рука с телефоном"
+                                width="370" />
+                        </picture>
                         <p class="ocupation-box__description">Мобильные приложения</p>
                     </li>
                     <li class="ocupation-box__item">
-                        <img class="ocupation-box__img" src="./images/img3.jpg" alt="рука с планшетом" width="370" />
+                        <picture>
+                            <source srcset="./images/desktop/img3.jpg 1x, ./images/desktop/img3@2x.jpg 2x">
+                            <img class="ocupation-box__img" src="./images/desktop/img3.jpg" alt="рука с планшетом"
+                                width="370" />
+                        </picture>
                         <p class="ocupation-box__description">Дизайнерские решения</p>
                     </li>
                 </ul>
@@ -157,7 +169,17 @@
                 <h2 class="team__heading">Наша команда</h2>
                 <ul class="team-box">
                     <li class="team-box__card">
-                        <img class="team-box__photo" src="./images/igor.jpg" alt="фото Игорь Демьяненко" />
+                        <picture>
+                            <source srcset="./images/desktop/igor.jpg 1x, ./images/desktop/igor@2x.jpg 2x"
+                                media="(min-width:1200px)">
+                            <source srcset="./images/tablet/igor-tab.jpg 1x, ./images/tablet/igor-tab@2x.jpg 2x"
+                                media="(min-width:768px)">
+                            <source srcset="./images/mobile/igor-mob.jpg 1x, ./images/mobile/igor-mob@2x.jpg  2x"
+                                media="(min-width:320px)">
+                            <img class="team-box__photo" src="./images/mobile/igor-mob.jpg"
+                                alt="фото Игорь Демьяненко" />
+                        </picture>
+
                         <div class="team-box__description">
                             <h3 class="team-box__heading">Игорь Демьяненко</h3>
                             <p class="team-box__text">Product Designer</p>
@@ -194,7 +216,15 @@
                         </div>
                     </li>
                     <li class="team-box__card">
-                        <img class="team-box__photo" src="./images/olga.jpg" alt="фото Ольга Репина" />
+                        <picture>
+                            <source srcset="./images/desktop/olga.jpg 1x, ./images/desktop/olga@2x.jpg 2x"
+                                media="(min-width:1200px)">
+                            <source srcset="./images/tablet/olga-tab.jpg 1x, ./images/tablet/olga-tab@2x.jpg 2x"
+                                media="(min-width:768px)">
+                            <source srcset="./images/mobile/olga-mob.jpg 1x, ./images/mobile/olga-mob@2x.jpg  2x"
+                                media="(min-width:320px)">
+                            <img class="team-box__photo" src="./images/mobile/olga-mob.jpg" alt="фото Ольга Репина" />
+                        </picture>
                         <div class="team-box__description">
                             <h3 class="team-box__heading">Ольга Репина</h3>
                             <p class="team-box__text">Frontend Developer</p>
@@ -231,7 +261,16 @@
                         </div>
                     </li>
                     <li class="team-box__card">
-                        <img class="team-box__photo" src="./images/nicholas.jpg" alt="фото Николай Тарасов" />
+                        <picture>
+                            <source srcset="./images/desktop/niko.jpg 1x, ./images/desktop/niko@2x.jpg 2x"
+                                media="(min-width:1200px)">
+                            <source srcset="./images/tablet/niko-tab.jpg 1x, ./images/tablet/niko-tab@2x.jpg 2x"
+                                media="(min-width:768px)">
+                            <source srcset="./images/mobile/niko-mob.jpg 1x, ./images/mobile/niko-mob@2x.jpg  2x"
+                                media="(min-width:320px)">
+                            <img class="team-box__photo" src="./images/mobile/niko-mob.jpg"
+                                alt="фото Николай Тарасов" />
+                        </picture>
                         <div class="team-box__description">
                             <h3 class="team-box__heading">Николай Тарасов</h3>
                             <p class="team-box__text">Marketing</p>
@@ -268,7 +307,15 @@
                         </div>
                     </li>
                     <li class="team-box__card">
-                        <img class="team-box__photo" src="./images/michael.jpg" alt="фото Михаил Ермаков" />
+                        <picture>
+                            <source srcset="./images/desktop/michael.jpg 1x, ./images/desktop/michael@2x.jpg 2x"
+                                media="(min-width:1200px)">
+                            <source srcset="./images/tablet/michael-tab.jpg 1x, ./images/tablet/michael-tab@2x.jpg 2x"
+                                media="(min-width:768px)">
+                            <source srcset="./images/mobile/michael-mob.jpg 1x, ./images/mobile/michael-mob@2x.jpg  2x"
+                                media="(min-width:320px)">
+                            <img class="team-box__photo" src="./images/mobile/michael-mob.jpg" alt="Михаил Ермаков" />
+                        </picture>
                         <div class="team-box__description">
                             <h3 class="team-box__heading">Михаил Ермаков</h3>
                             <p class="team-box__text">UI Designer</p>

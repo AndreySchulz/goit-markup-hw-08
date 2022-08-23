@@ -30,6 +30,9 @@
     background-color: transparent;
 
 
+    &:focus{
+        fill:$accent;
+    }
 
 
 
