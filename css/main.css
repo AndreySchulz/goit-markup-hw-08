@@ -93,9 +93,6 @@ a {
   border: none;
   background-color: transparent;
 }
-.menu-toggle:hover, .menu-toggle:focus {
-  fill: #2196f3;
-}
 @media screen and (min-width: 767.99px) {
   .menu-toggle {
     display: none;
