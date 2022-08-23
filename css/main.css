@@ -1163,6 +1163,7 @@ img {
 .work__overlay {
   position: relative;
   overflow: hidden;
+  z-index: -1;
 }
 
 .work__img {
