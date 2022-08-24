@@ -756,6 +756,7 @@ img {
 @media screen and (min-width: 1199.99px) {
   .footer-box {
     justify-content: space-between;
+    text-align: left;
   }
 }
 
